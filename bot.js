@@ -1,5 +1,6 @@
 ﻿const Discord = require("discord.js");
 const bot = new Discord.Client();
+const auth = require("auth.js");
 
 var lennyTriggers = ["ass",
 					"tits",
@@ -72,4 +73,4 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
 	}
 })
 
-bot.login("MzcyMTAwNTc0MTQyOTIyNzUy.DM_RNw.yrZNGgp3Tq-95UJx9FZPb5RmztY");
+bot.login(auth.token);
